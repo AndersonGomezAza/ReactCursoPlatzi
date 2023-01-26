@@ -1,0 +1,57 @@
+@import 'vars';
+
+.mobile-menu {
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  width: 300px;
+  left: 0;
+  height: auto;
+  border: 1px solid var(--very-light-pink);
+  border-radius: 6px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mobile-menu ul:nth-child(1) {
+  padding: 0 0;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 34px 0 0;
+  margin: 0;
+}
+.mobile-menu ul:nth-child(2) {
+  border-top: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li {
+  text-align: start;
+}
+.mobile-menu ul:last-child{
+  padding-top: 20px;
+}
+.mobile-menu ul li a{
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--sm);
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.mobile-menu ul:last-child li:last-child a{
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  font-weight: normal;
+}
+.mobile-menu ul li a.email-menu {
+  font-size: 12px;
+  color: var(--very-light-pink);
+  margin: 0;
+  font-weight: 300;
+}
+.mobile-menu ul:nth-child(3){
+  position: relative;
+  bottom: -15px;
+}
